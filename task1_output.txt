@@ -1,0 +1,131 @@
+PS C:\Users\uday sandeep\Downloads\Task1_Data_Cleaning> python task1_data_cleaning.py
+Dataset loaded successfully!
+Original dataset shape: (2240, 29)
+
+First 5 rows:
+     ID  Year_Birth   Education Marital_Status  ...  Complain  Z_CostContact  Z_Revenue Response
+0  5524        1957  Graduation         Single  ...         0              3         11        1
+1  2174        1954  Graduation         Single  ...         0              3         11        0
+2  4141        1965  Graduation       Together  ...         0              3         11        0
+3  6182        1984  Graduation       Together  ...         0              3         11        0
+4  5324        1981         PhD        Married  ...         0              3         11        0
+
+[5 rows x 29 columns]
+
+Missing values before cleaning:
+ID                     0
+Year_Birth             0
+Education              0
+Marital_Status         0
+Income                24
+Kidhome                0
+Teenhome               0
+Dt_Customer            0
+Recency                0
+MntWines               0
+MntFruits              0
+MntMeatProducts        0
+MntFishProducts        0
+MntSweetProducts       0
+MntGoldProds           0
+NumDealsPurchases      0
+NumWebPurchases        0
+NumCatalogPurchases    0
+NumStorePurchases      0
+NumWebVisitsMonth      0
+AcceptedCmp3           0
+AcceptedCmp4           0
+AcceptedCmp5           0
+AcceptedCmp1           0
+AcceptedCmp2           0
+Complain               0
+Z_CostContact          0
+Z_Revenue              0
+Response               0
+dtype: int64
+
+Duplicate rows before cleaning:
+0
+
+Cleaned column names:
+['id', 'year_birth', 'education', 'marital_status', 'income', 'kidhome', 'teenhome', 'dt_customer', 'recency', 'mntwines', 'mntfruits', 'mntmeatproducts', 'mntfishproducts', 'mntsweetproducts', 'mntgoldprods', 'numdealspurchases', 'numwebpurchases', 'numcatalogpurchases', 'numstorepurchases', 'numwebvisitsmonth', 'acceptedcmp3', 'acceptedcmp4', 'acceptedcmp5', 'acceptedcmp1', 'acceptedcmp2', 'complain', 'z_costcontact', 'z_revenue', 'response']
+
+Date data type:
+datetime64[us]
+
+Final missing values:
+id                     0
+year_birth             0
+education              0
+marital_status         0
+income                 0
+kidhome                0
+teenhome               0
+dt_customer            0
+recency                0
+mntwines               0
+mntfruits              0
+mntmeatproducts        0
+mntfishproducts        0
+mntsweetproducts       0
+mntgoldprods           0
+numdealspurchases      0
+numwebpurchases        0
+numcatalogpurchases    0
+numstorepurchases      0
+numwebvisitsmonth      0
+acceptedcmp3           0
+acceptedcmp4           0
+acceptedcmp5           0
+acceptedcmp1           0
+acceptedcmp2           0
+complain               0
+z_costcontact          0
+z_revenue              0
+response               0
+dtype: int64
+
+Final duplicate count:
+0
+
+Final dataset shape:
+(2240, 29)
+
+Final data types:
+id                             int64
+year_birth                     int64
+education                        str
+marital_status                   str
+income                       float64
+kidhome                        int64
+teenhome                       int64
+dt_customer           datetime64[us]
+recency                        int64
+mntwines                       int64
+mntfruits                      int64
+mntmeatproducts                int64
+mntfishproducts                int64
+mntsweetproducts               int64
+mntgoldprods                   int64
+numdealspurchases              int64
+numwebpurchases                int64
+numcatalogpurchases            int64
+numstorepurchases              int64
+numwebvisitsmonth              int64
+acceptedcmp3                   int64
+acceptedcmp4                   int64
+acceptedcmp5                   int64
+acceptedcmp1                   int64
+acceptedcmp2                   int64
+complain                       int64
+z_costcontact                  int64
+z_revenue                      int64
+response                       int64
+dtype: object
+
+==========================================
+Cleaning completed successfully!
+Cleaned dataset saved as:
+cleaned_customer_data.csv
+==========================================
+PS C:\Users\uday sandeep\Downloads\Task1_Data_Cleaning>
